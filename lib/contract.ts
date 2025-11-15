@@ -13,7 +13,7 @@ export function getReadOnlyProvider() {
   return ethers.getDefaultProvider();
 }
 
-export function getReadOnlyContract(provider?: ethers.providers.Provider) {
+export function getReadOnlyContract(provider?: ethers.Provider) {
   const p = provider || getReadOnlyProvider();
   return new ethers.Contract(CONTRACT_ADDRESS, abi as any, p as any);
 }
