@@ -1,5 +1,5 @@
 import { ethers } from "ethers";
-import abi from "./abi.json";
+import abi from "../public/abi.json";
 
 export const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS || "";
 
